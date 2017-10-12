@@ -1,0 +1,18 @@
+
+<script type="text/javascript">
+    function createTimedLink(callback, timeout){
+        setTimeout( function(){callback();}, timeout);
+        return false;
+      }
+      
+      function myFunction() { 
+        document.getElementById("hardcoded").click();
+       }      
+</script>
+
+
+<a href="">Empty link</a>
+<br>
+<a id="hardcoded" href="https://ul.time.intapp.com/login-result=409cd2d7-4ebd-4745-bb4f-2ac671784b4a">Hardcoded url</a>
+<br>    
+<a href="javascript:void(0)" onClick="createTimedLink(myFunction, 10000);">JS link (click and wait 20 sec for the magic)</a>
