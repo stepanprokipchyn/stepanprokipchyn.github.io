@@ -18,5 +18,7 @@
 
 
 <script type="text/javascript">
-	document.getElementById("populated").href = window.location.href.replace("ul", "ul-dev");
+	var url = new URL(window.location.href);
+	url.host = "ul-dev.time.intapp.com"
+	document.getElementById("populated").href = url.href;
 </script>
